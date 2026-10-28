@@ -1,0 +1,80 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Perfil de usuário professor ou coordenador escolar autenticado",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "ID único do usuário no Firebase Authentication"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "E-mail institucional do usuário"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "Nome completo ou de exibição do usuário"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["professor", "coordenador", "gestor"],
+          "description": "Cargo ou função pedagógica na escola"
+        },
+        "schoolName": {
+          "type": "string",
+          "description": "Nome da unidade escolar"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp ISO da criação do cadastro"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp ISO da última atualização do perfil"
+        }
+      },
+      "required": ["uid", "email"]
+    },
+    "Submission": {
+      "title": "Submission",
+      "description": "Resposta individual do questionário escolar sobre bullying e convivência",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Identificador da submissão"
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Carimbo de data e hora formatado"
+        },
+        "studentInfo": {
+          "type": "object",
+          "description": "Dados da turma e identificação do estudante"
+        },
+        "answers": {
+          "type": "object",
+          "description": "Mapeamento das respostas para cada questão (1 a 15)"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp ISO de gravação"
+        }
+      },
+      "required": ["id", "timestamp", "studentInfo", "answers"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Armazena dados de perfil e preferências do usuário autenticado. Cada usuário acessa somente seu próprio documento."
+    },
+    "/submissions/{submissionId}": {
+      "schema": "Submission",
+      "description": "Armazena todas as respostas enviadas pelos estudantes da escola"
+    }
+  }
+}
