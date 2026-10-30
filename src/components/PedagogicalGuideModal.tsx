@@ -51,10 +51,10 @@ export const PedagogicalGuideModal: React.FC<PedagogicalGuideModalProps> = ({
             </div>
             <div>
               <h3 className="text-lg font-bold">
-                Guia Pedagógico & Marco Legal das 15 Questões
+                Guia Pedagógico &amp; Marco Legal das 15 Questões
               </h3>
               <p className="text-xs text-purple-100">
-                Fundamentação jurídica nas Leis nº 13.185/2015 e 14.811/2024 para professores, coordenadores e alunos
+                Fundamentação jurídica nas Leis nº 13.185/2015 e 14.811/2024 · Escola Silvio Oliveira dos Santos
               </p>
             </div>
           </div>

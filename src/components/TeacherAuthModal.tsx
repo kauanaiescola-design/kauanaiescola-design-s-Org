@@ -82,10 +82,10 @@ export const TeacherAuthModal: React.FC<TeacherAuthModalProps> = ({
 
       const staffProfile: UserProfile = {
         uid: 'staff-adm-silvio',
-        email: 'gestao@escola.educacao.gov.br',
+        email: 'gestao@silviooliveira.edu.br',
         displayName: 'Professor(a) / Diretor(a)',
         role: 'Professor(a) / Diretor(a)',
-        schoolName: 'Colégio Estadual Modelo',
+        schoolName: 'Escola Silvio Oliveira dos Santos',
         createdAt: new Date().toISOString()
       };
 
@@ -127,15 +127,15 @@ export const TeacherAuthModal: React.FC<TeacherAuthModalProps> = ({
               <KeyRound className="w-6 h-6 text-white" />
             </div>
             <div>
-              <div className="inline-flex items-center gap-1 text-[11px] font-semibold text-white/80 bg-white/10 px-2 py-0.5 rounded-full mb-1">
+              <div className="inline-flex items-center gap-1 text-[11px] font-semibold text-white/90 bg-white/15 px-2 py-0.5 rounded-full mb-1">
                 <GraduationCap className="w-3 h-3" />
-                <span>Área Única: Professor & Direção</span>
+                <span>Escola Silvio Oliveira dos Santos</span>
               </div>
               <h2 className="text-xl font-bold tracking-tight text-white">
-                Acesso Restrito Institucional
+                Área de Professores &amp; Direção
               </h2>
               <p className="text-xs text-white/90 mt-0.5">
-                Entrada exclusiva mediante código de segurança
+                Acesso institucional restrito mediante código de segurança
               </p>
             </div>
           </div>

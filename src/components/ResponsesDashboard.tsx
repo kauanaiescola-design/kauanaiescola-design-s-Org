@@ -132,7 +132,7 @@ export const ResponsesDashboard: React.FC<ResponsesDashboardProps> = ({
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
-    link.setAttribute('download', `pesquisa_bullying_respostas_${new Date().toISOString().slice(0, 10)}.csv`);
+    link.setAttribute('download', `pesquisa_bullying_escola_silvio_oliveira_dos_santos_${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -184,10 +184,11 @@ export const ResponsesDashboard: React.FC<ResponsesDashboardProps> = ({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#f1f3f4] pb-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-xs font-semibold px-2 py-0.5 rounded bg-purple-100 text-purple-800">
-                Aba Professor · Recebimento de Respostas
+              <span className="text-xs font-semibold px-2 py-0.5 rounded bg-purple-100 text-purple-800 flex items-center gap-1">
+                <School className="w-3.5 h-3.5 text-purple-700" />
+                Escola Silvio Oliveira dos Santos
               </span>
-              <span className="text-xs text-neutral-500">· Sessão Protegida</span>
+              <span className="text-xs text-neutral-500">· Painel do Professor &amp; Direção</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-3xl sm:text-4xl font-normal text-[#202124]">

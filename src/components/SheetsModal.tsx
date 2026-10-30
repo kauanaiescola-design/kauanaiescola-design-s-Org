@@ -55,7 +55,7 @@ export const SheetsModal: React.FC<SheetsModalProps> = ({
 
     const link = document.createElement('a');
     link.href = encodeURI(csvContent);
-    link.download = `planilha_pesquisa_bullying_escola_${Date.now()}.csv`;
+    link.download = `respostas_bullying_escola_silvio_oliveira_dos_santos_${Date.now()}.csv`;
     link.click();
   };
 
@@ -77,7 +77,7 @@ export const SheetsModal: React.FC<SheetsModalProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-sm font-semibold tracking-tight">
-                  Questionário de Bullying e Convivência Escolar (Respostas)
+                  Escola Silvio Oliveira dos Santos · Planilha de Respostas
                 </h3>
                 <span className="text-[11px] bg-emerald-800/60 px-1.5 py-0.5 rounded text-emerald-100 font-mono" title="Banco de dados Firestore vinculado">
                   db: ai-studio-checkbullyingesc-46e361e7-dcf6-42de-8f31-dfa5efebf04d

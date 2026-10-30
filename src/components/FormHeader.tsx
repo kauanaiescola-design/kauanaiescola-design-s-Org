@@ -67,9 +67,13 @@ export const FormHeader: React.FC<FormHeaderProps> = ({
 
           <div className="min-w-0">
             <div className="flex items-center gap-2">
-              <h1 className="text-[17px] font-medium text-[#202124] truncate tracking-tight">
-                Questionário: Convivência Escolar e Bullying
+              <h1 className="text-[15px] sm:text-[17px] font-medium text-[#202124] truncate tracking-tight">
+                Escola Silvio Oliveira dos Santos
               </h1>
+              <span className="hidden sm:inline-block text-neutral-300">|</span>
+              <span className="hidden sm:inline-block text-xs font-normal text-neutral-600 truncate">
+                Questionário de Convivência & Bullying
+              </span>
               {currentRole === 'professor' && (
                 <span className="hidden sm:inline-flex items-center text-xs text-neutral-500 gap-1 ml-1" title="Sincronizado com Firebase Cloud Firestore">
                   <FolderCheck className="w-3.5 h-3.5 text-emerald-600" />

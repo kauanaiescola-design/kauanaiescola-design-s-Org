@@ -1,6 +1,6 @@
 {
   "name": "Questionário Escolar - Bullying e Convivência",
-  "description": "Formulário interativo estilo Google Forms para aplicação de questionário sobre bullying, agressões e convivência no ambiente escolar.",
+  "description": "Formulário oficial da Escola Silvio Oliveira dos Santos para pesquisa e diagnóstico sobre convivência, combate ao bullying e cultura de paz.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

@@ -46,7 +46,10 @@ export const ShareModal: React.FC<ShareModalProps> = ({
         <div className="flex items-center justify-between border-b border-[#f1f3f4] pb-3">
           <div className="flex items-center gap-2 text-base font-medium text-neutral-900">
             <Share2 className="w-5 h-5 text-purple-700" />
-            <span>Enviar Questionário aos Alunos</span>
+            <div>
+              <span className="text-[11px] font-semibold text-purple-700 block">Escola Silvio Oliveira dos Santos</span>
+              <span>Enviar Questionário aos Alunos</span>
+            </div>
           </div>
           <button
             onClick={onClose}

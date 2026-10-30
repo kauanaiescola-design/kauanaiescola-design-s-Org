@@ -47,7 +47,7 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
   // Local profile edit state
   const [name, setName] = useState(currentUser?.displayName || '');
   const [role, setRole] = useState(currentUser?.role || 'Professor(a)');
-  const [school, setSchool] = useState(currentUser?.schoolName || 'Escola Modelo');
+  const [school, setSchool] = useState(currentUser?.schoolName || 'Escola Silvio Oliveira dos Santos');
   const [isSavingProfile, setIsSavingProfile] = useState(false);
   const [profileSuccess, setProfileSuccess] = useState(false);
   const [profileError, setProfileError] = useState<string | null>(null);
@@ -56,7 +56,7 @@ export const SettingsTab: React.FC<SettingsTabProps> = ({
     if (currentUser) {
       setName(currentUser.displayName || '');
       setRole(currentUser.role || 'Professor(a)');
-      setSchool(currentUser.schoolName || 'Escola Modelo');
+      setSchool(currentUser.schoolName || 'Escola Silvio Oliveira dos Santos');
     }
   }, [currentUser]);
 

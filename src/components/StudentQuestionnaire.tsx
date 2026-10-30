@@ -153,9 +153,9 @@ export const StudentQuestionnaire: React.FC<StudentQuestionnaireProps> = ({
         <div className="p-5 sm:p-7 space-y-4">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <div className="flex items-center gap-2 text-xs font-medium text-neutral-600 mb-1">
+              <div className="flex items-center gap-2 text-xs font-semibold text-purple-700 mb-1">
                 <School className="w-4 h-4 text-purple-700" />
-                <span>Projeto Pedagógico de Convivência e Paz Escolar</span>
+                <span>Escola Silvio Oliveira dos Santos · Convivência &amp; Paz Escolar</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-medium text-[#202124] tracking-tight">
                 Questionário: Convivência Escolar, Bullying e Segurança
@@ -165,7 +165,7 @@ export const StudentQuestionnaire: React.FC<StudentQuestionnaireProps> = ({
 
           <div className="text-sm text-neutral-700 space-y-2.5 leading-relaxed border-t border-[#f1f3f4] pt-4">
             <p>
-              Prezado(a) estudante, este questionário tem como objetivo avaliar o conhecimento e a percepção da nossa comunidade escolar acerca de situações de violência, intimidação sistemática (bullying), agressões verbais/físicas, trotes e cyberbullying.
+              Prezado(a) estudante da <strong>Escola Silvio Oliveira dos Santos</strong>, este questionário tem como objetivo avaliar o conhecimento e a percepção da nossa comunidade escolar acerca de situações de violência, intimidação sistemática (bullying), agressões verbais/físicas, trotes e cyberbullying.
             </p>
             <p className="text-neutral-600">
               Suas respostas são confidenciais e fundamentais para nortear ações de acolhimento, proteção e prevenção na escola. Todas as perguntas são embasadas no <strong>Programa de Combate ao Bullying (Lei nº 13.185/2015)</strong> e na <strong>Lei nº 14.811/2024</strong>.

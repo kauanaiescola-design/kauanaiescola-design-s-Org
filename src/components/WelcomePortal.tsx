@@ -55,13 +55,13 @@ export const WelcomePortal: React.FC<WelcomePortalProps> = ({
 
             <div className="space-y-1.5 flex-1">
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-100 text-purple-800">
-                <span>Formulário Escolar Oficial 2026 · Firebase Auth &amp; Firestore</span>
+                <span>Escola Silvio Oliveira dos Santos · Formulário Oficial 2026</span>
               </div>
               <h1 className="text-2xl sm:text-3xl font-semibold text-[#202124] tracking-tight">
-                Bem-vindo ao Formulário Escolar
+                Escola Silvio Oliveira dos Santos
               </h1>
               <p className="text-sm text-neutral-600 leading-relaxed max-w-2xl">
-                Pesquisa Diagnóstica de Convivência, Combate ao Bullying e Segurança no Ambiente Educacional (Leis nº 13.185/2015 e 14.811/2024).
+                Pesquisa Diagnóstica de Convivência, Combate ao Bullying e Segurança no Ambiente Escolar (Leis nº 13.185/2015 e 14.811/2024).
               </p>
             </div>
           </div>

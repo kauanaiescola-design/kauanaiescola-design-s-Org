@@ -39,9 +39,14 @@ export const ConfirmationScreen: React.FC<ConfirmationScreenProps> = ({
         <div className="p-6 sm:p-8 space-y-5">
           <div className="flex items-center gap-3 text-emerald-600">
             <CheckCircle2 className="w-8 h-8 shrink-0 text-emerald-600" />
-            <h2 className="text-2xl font-medium text-[#202124]">
-              Questionário: Convivência Escolar, Bullying e Segurança
-            </h2>
+            <div>
+              <span className="text-xs font-semibold text-purple-700 uppercase tracking-wide block">
+                Escola Silvio Oliveira dos Santos
+              </span>
+              <h2 className="text-2xl font-medium text-[#202124]">
+                Questionário: Convivência Escolar, Bullying e Segurança
+              </h2>
+            </div>
           </div>
 
           <div className="text-sm text-neutral-800 space-y-2 border-t border-[#f1f3f4] pt-4">
@@ -49,7 +54,7 @@ export const ConfirmationScreen: React.FC<ConfirmationScreenProps> = ({
               Sua resposta foi registrada com sucesso!
             </p>
             <p className="text-neutral-600 text-xs sm:text-sm">
-              Obrigado por contribuir com a nossa pesquisa diagnóstica. Sua voz é fundamental para construirmos uma escola mais empática, justa e livre de agressões físicas e virtuais.
+              Obrigado por contribuir com a pesquisa da Escola Silvio Oliveira dos Santos. Sua voz é fundamental para construirmos uma escola mais empática, justa e acolhedora para todos.
             </p>
           </div>
 
